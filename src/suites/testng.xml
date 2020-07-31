@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests">
+
+	<test name="LogInTest">
+		<parameter name="url" value="https://www.saucedemo.com/" />
+		<parameter name="user_name" value="standard_user" />
+		<parameter name="password" value="secret_sauce" />
+		<classes>
+			<class name="tests.LoginTest" />
+		</classes>
+	</test>
+</suite>
