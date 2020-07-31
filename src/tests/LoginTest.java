@@ -16,7 +16,7 @@ public class LoginTest extends BaseTest {
 		Util.openBrowser(driver, url);
 	}
 	@Test
-	public void login_standard_user_test() {
+	public void login_test() {
 		Login.as(driver, user_name, password);
 	}
 }

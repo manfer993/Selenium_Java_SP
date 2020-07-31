@@ -6,8 +6,9 @@ import actions.*;
 
 public class Util {
 	public static WebDriver setUp(WebDriver driver) {
-		Wait.implicitly(driver);
-		return GetBrowser.chrome(driver);
+		WebDriver myDriver = GetBrowser.chrome(driver);
+		Wait.implicitly(myDriver);
+		return myDriver;
 	}
 	
 	public static void close(WebDriver driver) {
